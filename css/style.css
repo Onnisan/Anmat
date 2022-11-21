@@ -29,11 +29,67 @@ html{
 
 
 /* header */
+.nav-header{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 100vw;
+    opacity: 0.9;
+}
+
+.nav-header2{
+    width: 100%;
+    max-width: 100vw;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none
+}
+nav a {
+    font-family: 'Nexa_Regular';    
+    font-size: 20px;
+    display: inline-block;
+    color: #54ADA9;
+    text-decoration: none;
+}
+nav a:hover {
+    display: inline-block;
+    color: #274C98;
+    text-decoration: none;
+}
 header div img{
     width: 100%;
     max-width: 100vw;
 }
 
+@media screen and (max-width: 767px) {
+
+    nav {
+        display: none;
+    }
+    .logo{
+        text-align: center;
+        max-width:45%;
+        max-height:45%;
+        left: unset;
+    }
+    .logo img{
+        width: 80%;
+        max-width: 90%;
+        position: relative;
+        position: relative;
+        max-height:100%;
+    }
+}
+
+/* White */
 
 .white_bcg_group{
     max-width: 100vw;
@@ -43,6 +99,8 @@ header div img{
 .white_bcg_group .container{
     max-width: calc(100vw - 50px);
 }
+
+/* Gray */
 
 .gray_bcg_group{
     background-color: #DCDFE3;
@@ -70,6 +128,8 @@ header div img{
     height: 350px;
 }
 
+/* White group 2 */
+
 .white_bcg_group_2 #img img{
     width: 500px;
 }
@@ -91,14 +151,17 @@ header div img{
     height: 65px;
     width: 100%;
 }
+
 .hand{
     width: 100%;
     max-width: 100vw;
 }
+
 .green_bcg{
     background-color: #54ADA9;
 }
 
+/* Footer */
 
 footer{
     position:relative;
