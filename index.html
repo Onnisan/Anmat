@@ -15,39 +15,60 @@
     <link rel="stylesheet" href="/Anmat/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/Anmat/css/owl.theme.default.css">
     <link rel="stylesheet" href="/Anmat/css/owl.theme.default.min.css">
-    <title>Amant 1st page</title>
+    <title>Anmat</title>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   </head>
   <body>
     <script>
         $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplaySpeed: 700,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                nav:false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
                 }
-            }});
+                });
         });
     </script>
     <header>
+        <div class="nav-header" dir="ltr">
+            <div class="container pt-4 pb-4">
+                <div class="d-flex flex-row justify-content-center justify-content-xl-between align-items-center">
+                    <div class="logo">
+                        <a href="#"><img src="/Anmat/assets/logo.png" alt="logo"></a>
+                    </div>
+                    <nav>
+                        <a class="px-3" href="#">Home</a>
+                        <a class="px-3" href="#">Contact Us</a>
+                        <!-- <a class="px-3" href="#"> </a>
+                        <a class="px-3" href="#"></a> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
         <div><img src="/Anmat/assets/Component_1.webp" alt="Header img"></div>
     </header>
     <section class="white_bcg_group" dir="ltr">
         <div class="container mx-5 my-5">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col">
-                    <img src="/Anmat/assets/logo.png" alt="">
+                    <img src="/assets/logo.png" alt="">
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col" style="max-width: 2%"><img src="/Anmat/assets/Component_2.svg" alt=""></div>
                 <div class="col" style="font-family: 'Nexa_Bold' ; font-size: 30px;">Who are we?</div>
@@ -88,14 +109,17 @@
         <div class="owl-carousel owl-theme owl-loaded">
             <div class="owl-stage-outer">
                 <div class="owl-stage">
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
-                    <div class="owl-item"><img src="/Anmat/assets/icon_1.svg" alt="" style="width: 100px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client1.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client21.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client3.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client4.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client5.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client6.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client7.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client8.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client_3m.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client_te.jpg" alt="" style="width: 160px;"></div>
+                    <div class="owl-item"><img src="/Anmat/assets/180x160_fill_client_vm.jpg" alt="" style="width: 160px;"></div>
                 </div>
             </div>
             <!-- <div class="owl-nav">
@@ -143,7 +167,7 @@
                     <div class="col-md-4 col-12 pb-3">
                         ANMAT is Saudi company with local community ties, intertionally recognized standards, and a profound understanding of regional markets. Based in Riyadh, KSA, and founded in 2006.
                     </div>
-<!--                     <div class="col-md-3 col-6 text-center">
+                    <!-- <div class="col-md-3 col-6 text-center">
                         <div>Home</div>
                         <div>test</div>
                         <div>test</div>
@@ -167,5 +191,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="/Anmat/js/owl.carousel.js"></script>
+    <script src="/Anmat/js/owl.autoplay.js"></script>
   </body>
 </html>
