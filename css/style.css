@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'MyriadPro-Regular';
-    src: url('/assets/fonts/MyriadPro-Regular.otf') format('opentype');
+    src: url('/Anmat/assets/fonts/MyriadPro-Regular.otf') format('opentype');
 }
 @font-face {
     font-family: 'Nexa_Bold';
-    src: url('/assets/fonts/Nexa_Bold.otf') format('opentype');
+    src: url('/Anmat/assets/fonts/Nexa_Bold.otf') format('opentype');
 }
 @font-face {
     font-family: 'Nexa_Heavy';
-    src: url('/assets/fonts/Nexa_Heavy.otf') format('opentype');
+    src: url('/Anmat/assets/fonts/Nexa_Heavy.otf') format('opentype');
 }
 @font-face {
     font-family: 'Nexa_Regular';
-    src: url('/assets/fonts/Nexa_Regular.otf') format('opentype');
+    src: url('/Anmat/assets/fonts/Nexa_Regular.otf') format('opentype');
 }
 
 
@@ -115,7 +115,7 @@ footer .background{
     /* z-index: -1; */
 }
 
-footer .background img{
+footer .background #bcg_img{
     margin-top: calc(100vh - 110vh);
     position: absolute;
     overflow: hidden;
@@ -125,7 +125,7 @@ footer .background img{
     /* z-index: -1; */
 }
 @media screen and (max-width: 480px)  {
-    .background img{
+    .background #bcg_img{
         display: none;
     }
 }
